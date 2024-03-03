@@ -16,4 +16,32 @@ upper,lower=count(input_string)
 print("number of upper case letter:",upper)
 print("lower case letters:",lower)
 #Ex3
-
+s=input()
+t=s
+x=iter(t)
+ans=True
+for i in s[::-1]:
+    if i!=next(x):
+        ans=False
+        break
+print(ans)
+#Ex4
+import math
+import time
+number=int(input("Write a number "))
+milisecond=int(input("Write a milisecond "))
+seconds=milisecond/1000
+time.sleep(seconds)
+print(math.sqrt(number))
+#Ex5
+n=int(input())
+mylist=list()
+for i in range(n):
+    a=input()
+    if a=="true" or a=="True":
+        mylist.append(True)
+    else:
+        mylist.append(False)
+mytuple=tuple(mylist)
+x=all(mytuple)
+print(x)
