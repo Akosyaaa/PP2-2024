@@ -7,7 +7,7 @@ print(x)
 txt=input()
 x=re.search(r"ab{2,3}",txt)
 print(x)
-#Ex3
+#Ex3-
 txt=input()
 x=re.findall(r"[a-z_]+_[a-z]+",txt)
 print(x)
